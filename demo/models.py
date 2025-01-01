@@ -53,7 +53,7 @@ class UserModel(AbstractBaseUser,PermissionsMixin):
     
     USERNAME_FIELD ='phone_number'
     
-    objects = UserModelManager()
+    objects = UserManager()
     
     def __str__(self):
         return self.phone_number
